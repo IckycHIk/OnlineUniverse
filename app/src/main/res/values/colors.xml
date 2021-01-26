@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="greenVeryLitch">#bed3ac</color>
+
+    <color name="greenLitch">#28b350</color>
+    <color name="green_Light">#5428B350</color>
+    <color name="green">#02B361</color>
+    <color name="bacgoround_fragment">#cbcccc</color>
+    <color name="pink_text_color">#f150a7</color>
+
+    <color name="transparent_grey">#39363636</color>
+
+    <color name="black">#000000</color>
+    <color name="toolbar_color">#666D9E</color>
+    <color name="light_blue">#909BE4</color>
+
+    <color name="bacground_ntb">#16222a</color>
+    <color name="gray">#3e3e3e</color>
+    <color name="color_light_gray">#757373</color>
+    <color name="material_lite">#FFFAFAFA</color>
+    <color name="white">#ffffff</color>
+    <color name="colorWhite">#2F3136</color>
+
+    <color name="navigation_main">#2F3136</color>
+    <color name="navigation_secondary">#202225</color>
+
+
+    <color name="min_color">#2F3136</color>
+
+
+    <color name="green_text">#00584c</color>
+
+
+    <color name="cornflower_blue">#6274e2</color>
+    <color name="cornflower_blue_dark">#303F9F</color>
+    <color name="cornflower_blue_darkest">#2d3a93</color>
+    <color name="gray_light">#e8e8e8</color>
+    <color name="gray_transparent">#a6efefef</color>
+    <color name="gray_dark">#858585</color>
+    <color name="gray_dark_transparent">#ae858585</color>
+    <color name="gray_darkest">#ae282828</color>
+    <color name="black_10">#19000000</color>
+    <color name="ivory">#f8efe6</color>
+    <color name="ivory_dark">#f7e8d9</color>
+    <color name="green_dark">#2da346</color>
+    <color name="red">#e94f4f</color>
+    <color name="brown">#4e342e</color>
+
+    <color name="colorpure">#303841</color>
+    <color name="colorpurple">#38da74</color>
+    <color name="colortab">#66CDAA</color>
+    <color name="colorcoltitle">#FFFFFF</color>
+    <color name="colorUsername">#5C5C5C</color>
+    <color name="colortsxtintro">#858585</color>
+
+
+
+</resources>

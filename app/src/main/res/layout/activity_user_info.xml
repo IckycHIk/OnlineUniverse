@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="320dip"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginTop="160dip"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:title="UserAccount">
+
+            <com.devforyou.onlineunivers.Activity.UserInfo.BlurredLayout
+                android:id="@+id/blured"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="parallax">
+
+                <ImageView
+                    android:id="@+id/backdrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/example_img"
+                    app:layout_collapseMode="parallax" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="#33000000"
+                    android:tag="blur region" />
+
+
+            </com.devforyou.onlineunivers.Activity.UserInfo.BlurredLayout>
+
+
+            <FrameLayout
+                android:id="@+id/main_fl_title"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="75dip"
+                app:layout_collapseMode="parallax">
+
+
+                <LinearLayout
+                    android:id="@+id/main_ll_title_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_img"
+                        android:layout_width="110dip"
+                        android:layout_height="110dip"
+                        android:layout_gravity="center_horizontal"
+
+                        android:layout_marginTop="30dip"
+                        android:src="@drawable/head" />
+
+                    <TextView
+                        android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/oswald_regular"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                    android:text="USER ID"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginTop="4dp"-->
+                    <!--android:text="fqwfqw"-->
+                    <!--android:textColor="@android:color/white" />-->
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                app:layout_collapseMode="pin"/>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                app:tabIndicatorColor="@color/navigation_main" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:background="@color/navigation_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!--</LinearLayout>-->
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/sign_out_floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        app:backgroundTint="@color/navigation_secondary"
+        android:src="@drawable/icon_exit_24sp"
+       app:fab_colorNormal="@color/navigation_main"
+        app:fab_colorPressed="@color/navigation_secondary"
+        app:borderWidth="0dip"
+        app:layout_anchorGravity="top|right" />
+
+
+    <!--<android.support.v4.view.ViewPager--><!--android:id="@+id/viewpager"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

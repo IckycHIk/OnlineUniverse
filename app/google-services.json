@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "502493067028",
+    "firebase_url": "https://onlineunivers-b544b.firebaseio.com",
+    "project_id": "onlineunivers-b544b",
+    "storage_bucket": "onlineunivers-b544b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502493067028:android:e103502d244a38d59db401",
+        "android_client_info": {
+          "package_name": "com.devforyou.onlineunivers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502493067028-6931llu40s97nblt73dfk8fvka89i7n9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devforyou.onlineunivers",
+            "certificate_hash": "289cb56cf13b8f4788d439934b8334e5036f05e3"
+          }
+        },
+        {
+          "client_id": "502493067028-uo28b8d2bv3bu9fuvub28ivbd18g59d6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devforyou.onlineunivers",
+            "certificate_hash": "7b53d11245867bf2f944e7ceebdc7b6f4c9a1607"
+          }
+        },
+        {
+          "client_id": "502493067028-7q1oi0277agg7lq6ott6p6bm028ejqut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCsXTydwbYzJqDQRwdrzeuV06UrG-cfbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502493067028-7q1oi0277agg7lq6ott6p6bm028ejqut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

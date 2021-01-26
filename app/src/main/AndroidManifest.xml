@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.devforyou.onlineunivers">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+
+        <activity android:name=".Activity.MainActivity">
+
+        </activity>
+        <activity android:name=".Activity.UserInfo.UserInfoActivity"/>
+
+
+
+
+
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity.AuthGoogleActivity"/>
+
+
+       <activity android:name=".Activity.ResultTestActivity">
+
+
+
+       </activity>
+
+        <activity android:name=".Activity.Custom_quiz">
+
+        </activity>
+
+
+        <activity android:name=".Activity.TestAttemptActivity"/>
+
+
+        <activity android:name=".Activity.AboutCourseActivity"/>
+
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+    <item
+        android:checkable="true"
+        android:id="@+id/Today"
+        android:orderInCategory="1"
+        android:title="Сегодня"
+        android:checked="false"
+        />
+        <item
+            android:checkable="true"
+            android:id="@+id/ProgresUser"
+            android:orderInCategory="1"
+            android:title="Прогрес"
+            android:checked="false"
+            />
+        <item
+            android:checkable="true"
+            android:id="@+id/Test_Users"
+            android:orderInCategory="1"
+            android:title="Задания"
+            android:checked="false"
+            />
+    </group>
+
+    <item
+        android:checkable="true"
+        android:id="@+id/Material"
+        android:orderInCategory="1"
+        android:title="Материал для развития"
+        android:checked="false"
+        />
+
+</menu>

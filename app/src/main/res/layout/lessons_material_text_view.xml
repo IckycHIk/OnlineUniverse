@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_margin="10dp"
+ >
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:justificationMode="inter_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:text="Крутость – это образ мыслей. Крутой парень будет крутым, даже если наденет балетную юбку в горошек. Может, он будет выглядеть не так устрашающе, но он все равно будет крут. Это потому, что крутость находится в голове. Стать крутым – это как достичь нирваны, но намного смелее (и круче!).
+Посмотрите фильмы с Клинтом Иствудом, чтобы иметь представление о том, как себя вести, быть жестким и устрашающим. Позаимствуйте слова, жесты, манеру поведения, которые, как вы думаете, вам подойдут, и добавьте кое-что от себя.
+Почитайте о крутых парнях. Например, Сунь Цзы и Чингизхан были нереально круты во время войны; Уинстон Черчилль и Орсон Уэллс курили больше сигар, чем Фидель и Рауль, вместе взятые; Дэниел Дэй Льюис и Джефф Бриджес носят твид со спортивными штанами, ничуть не заботясь о том, кто и что об этом подумает.
+Если вы фанат мультипликационных фильмов или комиксов, в них тоже встречаются плохие парни. Вдохновляйтесь образами Капитена Америки, самурая Джека из одноименного сериала или Гремучки Джейка из Ранго."
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

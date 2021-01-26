@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/navigation_secondary"
+    android:layout_height="match_parent">
+
+
+    <com.hanks.htextview.typer.TyperTextView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EzTuT - сделанно для тебя"
+        android:textColor="@color/white"
+        android:fontFamily="@font/oxygen_bold"
+        android:textSize="24sp"
+        app:charIncrease="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:typerSpeed="30" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:parallax_factor="1"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation_main"
+        android:orientation="vertical" >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/navigation_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/about_course_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/js"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/about_course_constraintLoyout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about_course_img">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/value_people_of_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/about_course_group_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="10dp"
+                    android:text="Группа 0/13"
+                    android:textColor="@color/navigation_main"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/add_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/red"
+                android:text="@string/registr"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/value_people_of_group" />
+
+            <Button
+                android:id="@+id/add_to_dream"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:text="Добавить в список пожеланий"
+                android:textColor="@color/navigation_secondary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_course" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/what_can_i_do_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_to_dream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Чему я научусь?"
+                        android:textColor="@color/navigation_main"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/what_can_i_do"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Become a Master in Leadership"
+                        android:textColor="@color/navigation_secondary" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/what_can_i_do_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Описание"
+                        android:textColor="@color/navigation_main"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/course_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Leadership: Practical Leadership Skills
+
+Master leadership skills and leadership techniques with this highly practical advice and training
+
+
+
+Leadership is often seen an elusive or complex skill, but with this practical course you'll soon have it mastered. Whether you're managing a small team or an entire business this course will build essential skills for your time management, team motivation, and personal happiness. Leadership is an essential skill at home, at work, and in every stage of your career. If you're in charge of two or more people at work, this course could change your life.
+
+
+
+Chris Croft is an international speaker, and widely published author, who's been teaching Leadership Skills to companies for over 20 years. He's taught all over the world, as well as online, and has an entertaining and practical teaching style. This course is guaranteed to keep you engaged and amused, and teach you life changing skills for home and work.
+
+
+
+This Leadership course covers everything you need to know from delegating and motivating, differing leadership styles, keeping your finger on the pulse, and planning the future of your business. It looks at lots of real life examples (some of which will definitely get you laughing) and gives practical tools you can use right away to get better results."
+                        android:textColor="@color/navigation_secondary" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>
